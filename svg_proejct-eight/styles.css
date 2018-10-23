@@ -1,0 +1,133 @@
+/*** universal selector***/
+
+* {
+    box-sizing: border-box;
+}
+/***body general styling***/
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;
+    background: #edeff0;
+    background-image: url("svgs/background.svg");
+    background-size: auto;
+    cursor: alias;
+    line-height: 2em;
+    text-transform: capitalize;
+}
+#container {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+    height: 100%;
+    /* new line */
+    text-indent: 3px;
+}
+p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 20px;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+}
+a:hover {
+    color: #fff;
+}
+header {
+    padding-top: 10px;
+}
+header nav {
+    padding-bottom: 50px;
+    text-align: left;
+}
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav a:hover {
+    color: red;
+}
+nav a:hover .icon {
+    fill: pink;
+}
+main {
+    padding-top: 50px;
+}
+main h2 {
+    font-size: 28px;
+}
+footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: #ba8058;
+}
+nav ul li {
+    display: inline;
+    list-style-type: none;
+}
+nav ul {
+    text-align: left
+}
+.logo {
+    width: 140px;
+    height: 120px;
+}
+.orange {
+    fill: #FF00FF: color:red;
+}
+.chocolate {
+    fill: #3e3526;
+    color: black;
+}
+.gray {
+    fill: #800000;
+    color: yellow;
+}
+.pink {
+    fill: #FFFF00;
+    color: green;
+}
+nav .icon {
+    fill: chocolate;
+}
+header nav ul li:hover .icon {
+    fill: #111;
+    transition: 2s ease;
+}
+header nav ul li:hover .icon {
+    fill: orange;
+}
+.logo {
+    padding-top: 10px;
+    box-shadow: 0 0 10px #111;
+    opacity: 0.6;
+    transition: 0.4s ease-in;
+}
+.logo:hover {
+    opacity: 1;
+    box-shadow: 1 1 8px red;
+}
+/***media query***/
+
+@media only screen and (min-width: 325px) {
+    .logo .st1 {
+        display: none;
+    }
+    nav ul {
+        display: inline;
+    }
+}
+@media only screen and (min-width:425px) {
+    .logo .st1 {
+        display: initial;
+    }
+}
