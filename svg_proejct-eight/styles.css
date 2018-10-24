@@ -135,8 +135,13 @@ header nav ul li:hover .icon {
         display: inline;
     }
 }
-@media only screen and (min-width:425px) {
-    .logo .st1 {
-        display: initial;
-    }
+
+@media only screen and (min-width:450px){
+  .logo .st1{
+    display:initial;
+  }
+
+  .small-screen {
+    display:none;
+  }
 }
