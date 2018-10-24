@@ -13,11 +13,11 @@ body {
     font-weight: 300;
     color: #111;
     background: #edeff0;
-    background-image: url("svgs/background.svg");
-    background-size: auto;
     cursor: alias;
     line-height: 2em;
     text-transform: capitalize;
+    background-image: url("svgs/background.svg");
+    background-size: repeat;
 }
 #container {
     max-width: 960px;
@@ -26,6 +26,7 @@ body {
     height: 100%;
     /* new line */
     text-indent: 3px;
+
 }
 p {
     max-width: 350px;
@@ -81,21 +82,29 @@ nav ul {
     width: 140px;
     height: 120px;
 }
+.st1{
+  display: none;
+}
 .orange {
-    fill: #FF00FF: color:red;
+    fill: #C0C0C0;
+    color:red;
 }
 .chocolate {
     fill: #3e3526;
-    color: black;
+    color: chocolate;
 }
 .gray {
     fill: #800000;
-    color: yellow;
+    color: blue;
 }
 .pink {
     fill: #FFFF00;
     color: green;
 }
+.body{
+  fill:currentColor;
+}
+
 nav .icon {
     fill: chocolate;
 }
